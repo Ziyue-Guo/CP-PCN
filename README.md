@@ -1,6 +1,6 @@
 # CP-PCN: Crop Population Point Cloud Completion Network
 
-This repository contains the **PyTorch implementation** of **RP-PCN**, a point cloud completion network designed for reconstructing the complete canopy structure of field-grown rapeseed populations. This work extends **PF-Net(CVPR 2020)**, incorporating a **multi-resolution dynamic graph encoder (MRDG) and dynamic graph convolutional feature extractor (DGCFE)** to enhance the reconstruction of complex plant architectures.
+This repository contains the **PyTorch implementation** of **CP-PCN**, a point cloud completion network designed for reconstructing the complete canopy structure of field-grown rapeseed populations. This work extends **PF-Net(CVPR 2020)**, incorporating a **multi-resolution dynamic graph encoder (MRDG) and dynamic graph convolutional feature extractor (DGCFE)** to enhance the reconstruction of complex plant architectures.
 
 For further details, please refer to our paper: [unpublished].
 
