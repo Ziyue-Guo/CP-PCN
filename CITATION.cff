@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use CP-PCN in research, please cite the paper in preferred-citation."
+type: software
+title: "CP-PCN: Crop Population Point Cloud Completion Network"
+authors:
+  - family-names: Guo
+    given-names: Ziyue
+repository-code: "https://github.com/Ziyue-Guo/CP-PCN"
+url: "https://github.com/Ziyue-Guo/CP-PCN"
+license: MIT
+preferred-citation:
+  type: article
+  title: "A novel point cloud completion model for three-dimensional reconstruction of complex, dynamic population-level crop canopy architecture"
+  authors:
+    - family-names: Guo
+      given-names: Ziyue
+    - family-names: Yang
+      given-names: Xin
+    - family-names: Shen
+      given-names: Yutao
+    - family-names: Zhu
+      given-names: Yang
+    - family-names: Jiang
+      given-names: Lixi
+    - family-names: Cen
+      given-names: Haiyan
+  journal: "Plant Communications"
+  year: 2026
+  volume: "7"
+  issue: "3"
+  number: "101675"
+  doi: "10.1016/j.xplc.2025.101675"
+  url: "https://doi.org/10.1016/j.xplc.2025.101675"

@@ -1,0 +1,31 @@
+name: Repository checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test standard-library data audit (synthetic fixtures only)
+        run: python -m unittest discover -s tests -v
+      - name: Syntax-check all tracked Python files (no imports or training)
+        run: |
+          python - <<'PY'
+          import os
+          import py_compile
+          import subprocess
+          paths = subprocess.check_output(['git', 'ls-files', '-z', '--', '*.py'])
+          files = [os.fsdecode(path) for path in paths.split(b'\0') if path]
+          for path in files:
+              py_compile.compile(path, doraise=True)
+          print(f'Syntax checks passed for {len(files)} tracked Python files.')
+          PY

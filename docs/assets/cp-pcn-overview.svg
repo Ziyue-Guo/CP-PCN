@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="558" viewBox="0 0 1160 558" role="img" aria-labelledby="title desc">
+<title id="title">CP-PCN data workflow and completion network</title>
+<desc id="desc">Multiview imagery and individual plant reconstruction support simulated canopy populations and visibility annotations. Visible XYZ points enter a multi-resolution dynamic graph encoder and point pyramid decoder to predict missing XYZ points. A graph discriminator and completion losses supervise training.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#587c91"/></marker></defs>
+<rect width="1160" height="558" rx="20" fill="#f3f7fa"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="36" y="44" font-size="25" font-weight="700" fill="#153e50">CP-PCN</text>
+<text x="36" y="73" font-size="16" fill="#4c6978">From visible canopy surfaces to estimated occluded structure</text>
+<text x="36" y="108" font-size="12" font-weight="700" letter-spacing="1.5" fill="#527080">RESEARCH DATA WORKFLOW</text>
+<g fill="#fff" stroke="#cbdce5" stroke-width="1.5">
+<rect x="36" y="124" width="235" height="91" rx="10"/><rect x="316" y="124" width="235" height="91" rx="10"/>
+<rect x="596" y="124" width="235" height="91" rx="10"/><rect x="876" y="124" width="248" height="91" rx="10"/>
+<rect x="36" y="280" width="210" height="145" rx="10"/><rect x="291" y="280" width="246" height="145" rx="10"/>
+<rect x="582" y="280" width="246" height="145" rx="10"/><rect x="873" y="280" width="251" height="145" rx="10"/>
+</g>
+<g stroke="#587c91" stroke-width="2" marker-end="url(#a)">
+<path d="M277 170H306"/><path d="M557 170H586"/><path d="M837 170H866"/>
+<path d="M252 352H281"/><path d="M543 352H572"/><path d="M834 352H863"/>
+</g>
+<g text-anchor="middle" fill="#153e50">
+<text x="153" y="160" font-size="18" font-weight="700">Multiview imagery</text><text x="153" y="187" font-size="14">Camera poses and NeRF</text>
+<text x="433" y="160" font-size="18" font-weight="700">Individual plants</text><text x="433" y="187" font-size="14">Meshes and point clouds</text>
+<text x="713" y="160" font-size="18" font-weight="700">Population simulation</text><text x="713" y="187" font-size="14">Assembly and ray visibility</text>
+<text x="1000" y="160" font-size="18" font-weight="700">Paired training data</text><text x="1000" y="187" font-size="14">Visible / occluded XYZ</text>
+<text x="141" y="317" font-size="18" font-weight="700">Visible points</text><text x="141" y="355" font-size="24">XYZ</text><text x="141" y="393" font-size="14">Multiscale sampling</text>
+<text x="414" y="317" font-size="18" font-weight="700">MRDG encoder</text><text x="414" y="350" font-size="15">Dynamic graph features</text><text x="414" y="390" font-size="18">2048 / 512 / 256</text>
+<text x="705" y="317" font-size="18" font-weight="700">Point pyramid decoder</text><text x="705" y="350" font-size="15">Coarse to fine prediction</text><text x="705" y="390" font-size="18">128 / 256 / 2048</text>
+<text x="998" y="317" font-size="18" font-weight="700">Predicted missing points</text><text x="998" y="354" font-size="23">XYZ</text><text x="998" y="391" font-size="14">Combine with visible input</text>
+</g>
+<text x="36" y="260" font-size="12" font-weight="700" letter-spacing="1.5" fill="#527080">COMPLETION MODEL — RELEASED TRAINING DEFAULTS</text>
+<rect x="36" y="449" width="1088" height="58" rx="10" fill="#e6eff3" stroke="#9db6c4" stroke-dasharray="5 4"/>
+<text x="57" y="475" font-size="15" fill="#274f65">Training supervision: multiscale completion losses + dynamic graph discriminator / adversarial loss</text>
+<text x="57" y="495" font-size="12" fill="#527080">Reference missing points are training targets; model output does not include colors, normals or organ labels.</text>
+<text x="36" y="537" font-size="12" fill="#527080">Conceptual overview. Paper configurations differ from source defaults; see the reproducibility notes.</text>
+</g></svg>

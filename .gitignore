@@ -169,3 +169,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Local model weights and experiment outputs (tracked historical files retained)
+*.pth
+*.pt
+*.ckpt
+*.onnx
+/runs/
+/outputs/
